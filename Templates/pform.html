@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br> </br>
+
+  <div class="container">
+      <h1>Thank you for entering your quote request.</h1>
+      <br> </br>
+      <h1> Please confirm your information.</h1>
+   <br> </br>
+<ul>
+    {% for s in subscribers %}
+        <li> {{  s  }} </li>
+    {% endfor %}
+
+</ul>
+
+
+
+  </div>
+
+
+
+
+
+{% endblock %}
