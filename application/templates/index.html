@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{title}}</h1>
+
+    {% if errorflag == 1 %}
+        <div  class="alert alert-danger" role="alert">
+          {{  error_statement  }}
+        </div>
+
+    {% endif %}
+
+  <div class="container">
+      Please login to the Database {{ current_user.name }}
+      {% if current_user.is_authenticated %}
+    Hi {{current_user.name}}!
+    {% endif %}
+
+
+
+
+</div>
+
+
+{% endblock %}
